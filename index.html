@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>CALCULATOR</h1>
+        <div class="col-sm-12,col-md-12,col-lg-12">
+            <div class="backbody">
+                <h2>TONY</h2>
+                <input class="screen" id="screen" type="text"><br>
+                <div class="sevenrow">
+                    
+                    <input id="resetbtn"class="buttonreset"type="button" value="c" onclick="ClearScreen()">
+                    <input  id="buttonper"class="buttonnumber"type="button" value="%" onclick="btnClick(value)">
+                    <input class="buttonnumberplus"type="button" value="+"onclick="btnClick(value)">
+                    </div><br>
+                <div class="sevenrow">
+                <input class="buttonnumber"type="button" value="7" onclick="btnClick(value)">
+                <input class="buttonnumber"type="button" value="8" onclick="btnClick(value)">
+                <input class="buttonnumber"type="button" value="9" onclick="btnClick(value)">
+                <input class="buttonoperator"type="button" value="*" onclick="btnClick(value)">
+                </div><br>
+
+                <div class="sevenrow">
+                    <input class="buttonnumber"type="button" value="4" onclick="btnClick(value)">
+                    <input class="buttonnumber"type="button" value="5" onclick="btnClick(value)">
+                    <input class="buttonnumber"type="button" value="6" onclick="btnClick(value)">
+                    <input class="buttonoperator"type="button" value="-" onclick="btnClick(value)">
+                    </div><br>
+
+                    <div class="sevenrow">
+                        <input class="buttonnumber"type="button" value="1" onclick="btnClick(value)">
+                        <input class="buttonnumber"type="button" value="2" onclick="btnClick(value)">
+                        <input class="buttonnumber"type="button" value="3" onclick="btnClick(value)">
+                        <input class="buttonoperator"type="button" value="/"onclick="btnClick(value)">
+                        </div><br>
+                        <div class="sevenrow">
+                            
+                            
+                            <input class="buttonnumber"type="button" value="." onclick="btnClick(value)">
+                            <input class="buttonnumber"type="button" value="0" onclick="btnClick(value)">
+                            <input id="buttonequls"class="buttonequls"type="button" value="=" onclick="findResult()">
+                            </div><br>
+                
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
